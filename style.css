@@ -3,16 +3,51 @@
     padding: 0;
     box-sizing: border-box;
     }
-body{
+
+section{
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#contain{
-    width: 40vw;
-    height: 40vw;
+ #contain{
+    height: 400px;
+    width: 90%;
+    max-width: 400px;
     border: 1px solid black;
     border-radius: 50%;
+    position: relative;
 
+} 
+
+#sec,#min,#hr{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 5px;
+   
+    background-color: black;
+    border-radius: 50%;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+#hr{
+    width: 20%;
+    background-color: blue;
+}
+#min{
+    width: 25%;
+    background-color: brown;
+}
+#sec{
+    width:32%;
+}
+img{
+    height: 400px;
+    max-width: 400px;
+    border-radius: 50%;
+    position: relative;
+    filter:sepia()
 }
