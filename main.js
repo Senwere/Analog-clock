@@ -8,4 +8,5 @@ function cock(){
     let date=new Date()
     //get the seconds
     sec=date.getSeconds()
+    console.log(sec)
 }
