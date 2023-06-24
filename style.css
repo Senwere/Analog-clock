@@ -26,22 +26,26 @@ section{
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 5px;
-   
     background-color: black;
-    border-radius: 50%;
+    border-radius: 0 50% 50% 0%;
     transform-origin: left;
     transform: rotate(-90deg);
 }
+
+
 #hr{
+    height: 8px;
     width: 20%;
     background-color: blue;
 }
 #min{
+    height: 5px;
     width: 25%;
     background-color: brown;
 }
 #sec{
+     height: 2px;
+
     width:32%;
 }
 img{
@@ -50,4 +54,17 @@ img{
     border-radius: 50%;
     position: relative;
     filter:sepia()
+}
+#dot{
+    display: flex;
+    height: 30px;
+    /* width: 90%; */
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: black;
+    margin-top:-54%;
+    margin-left: 45%;
+
 }
